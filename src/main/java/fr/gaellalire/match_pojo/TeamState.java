@@ -14,6 +14,8 @@ public class TeamState {
 
     private List<String> playerIdentifiers;
 
+    private String captainIdentifier;
+
     public int getSet() {
         return set;
     }
@@ -53,4 +55,13 @@ public class TeamState {
     public void setPlayerIdentifiers(List<String> playerIdentifiers) {
         this.playerIdentifiers = playerIdentifiers;
     }
+
+    public String getCaptainIdentifier() {
+        return captainIdentifier;
+    }
+
+    public void setCaptainIdentifier(String captainIdentifier) {
+        this.captainIdentifier = captainIdentifier;
+    }
+    
 }
