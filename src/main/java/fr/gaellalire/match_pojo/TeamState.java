@@ -1,7 +1,5 @@
 package fr.gaellalire.match_pojo;
 
-import java.util.List;
-
 public class TeamState {
 
     private int set;
