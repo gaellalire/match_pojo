@@ -5,17 +5,11 @@ public class MatchConfiguration {
 
     private ScoredActivity scoredActivity;
 
-    private Teams teams;
+    private Team homeTeam;
+
+    private Team guestTeam;
 
     private MatchRules matchRules;
-
-    public Teams getTeams() {
-        return teams;
-    }
-
-    public void setTeams(Teams teams) {
-        this.teams = teams;
-    }
 
     public ScoredActivity getScoredActivity() {
         return scoredActivity;
@@ -32,4 +26,21 @@ public class MatchConfiguration {
     public void setMatchRules(MatchRules matchRules) {
         this.matchRules = matchRules;
     }
+
+    public Team getHomeTeam() {
+        return homeTeam;
+    }
+
+    public void setHomeTeam(Team homeTeam) {
+        this.homeTeam = homeTeam;
+    }
+
+    public Team getGuestTeam() {
+        return guestTeam;
+    }
+
+    public void setGuestTeam(Team guestTeam) {
+        this.guestTeam = guestTeam;
+    }
+    
 }

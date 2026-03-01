@@ -1,5 +1,7 @@
 package fr.gaellalire.match_pojo;
 
+import java.util.List;
+
 public class MatchEvent {
 
     private EventType type;
@@ -7,6 +9,14 @@ public class MatchEvent {
     private long timestamp;
 
     private boolean guestEvent;
+
+    private List<String> playerIdentifiers;
+
+    private String playerIdentifier;
+    
+    private SanctionType sanctionType;
+    
+    private List<PlayerSubstitution> playerSubstitutions;
 
     public EventType getType() {
         return type;
@@ -42,4 +52,36 @@ public class MatchEvent {
         this.cancelled = cancelled;
     }
 
+    public List<PlayerSubstitution> getPlayerSubstitutions() {
+        return playerSubstitutions;
+    }
+
+    public void setPlayerSubstitutions(List<PlayerSubstitution> playerSubstitutions) {
+        this.playerSubstitutions = playerSubstitutions;
+    }
+
+    public String getPlayerIdentifier() {
+        return playerIdentifier;
+    }
+
+    public void setPlayerIdentifier(String playerIdentifier) {
+        this.playerIdentifier = playerIdentifier;
+    }
+
+    public SanctionType getSanctionType() {
+        return sanctionType;
+    }
+
+    public void setSanctionType(SanctionType sanctionType) {
+        this.sanctionType = sanctionType;
+    }
+
+    public List<String> getPlayerIdentifiers() {
+        return playerIdentifiers;
+    }
+
+    public void setPlayerIdentifiers(List<String> playerIdentifiers) {
+        this.playerIdentifiers = playerIdentifiers;
+    }
+    
 }

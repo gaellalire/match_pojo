@@ -6,6 +6,8 @@ public class Team {
 
     private String name;
 
+    private String captainIdentifier;
+    
     private List<Player> players;
 
     public String getName() {
@@ -23,4 +25,14 @@ public class Team {
     public void setPlayers(List<Player> players) {
         this.players = players;
     }
+
+    public String getCaptainIdentifier() {
+        return captainIdentifier;
+    }
+
+    public void setCaptainIdentifier(String captainIdentifier) {
+        this.captainIdentifier = captainIdentifier;
+    }
+    
+    
 }

@@ -12,10 +12,6 @@ public class TeamState {
 
     private int timeout;
 
-    private List<String> playerIdentifiers;
-
-    private String captainIdentifier;
-
     public int getSet() {
         return set;
     }
@@ -46,22 +42,6 @@ public class TeamState {
 
     public void setTimeout(int timeout) {
         this.timeout = timeout;
-    }
-
-    public List<String> getPlayerIdentifiers() {
-        return playerIdentifiers;
-    }
-
-    public void setPlayerIdentifiers(List<String> playerIdentifiers) {
-        this.playerIdentifiers = playerIdentifiers;
-    }
-
-    public String getCaptainIdentifier() {
-        return captainIdentifier;
-    }
-
-    public void setCaptainIdentifier(String captainIdentifier) {
-        this.captainIdentifier = captainIdentifier;
     }
     
 }
