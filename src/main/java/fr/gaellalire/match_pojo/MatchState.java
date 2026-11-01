@@ -6,28 +6,6 @@ public class MatchState {
 
     private boolean ended;
 
-    // side that forfeited: "home", "guest" or "both"
-    private String forfeit;
-
-    // declared winner when the score is tied: "home" or "guest"
-    private String winner;
-
-    public String getForfeit() {
-        return forfeit;
-    }
-
-    public void setForfeit(String forfeit) {
-        this.forfeit = forfeit;
-    }
-
-    public String getWinner() {
-        return winner;
-    }
-
-    public void setWinner(String winner) {
-        this.winner = winner;
-    }
-
     private boolean guestService;
 
     private boolean guestServiceFirst;

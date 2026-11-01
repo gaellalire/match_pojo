@@ -10,6 +10,29 @@ public class TeamState {
 
     private int timeout;
 
+    // this team forfeited
+    private boolean forfeit;
+
+    // this team declares it won (decides a tied score); both teams
+    // declaring it is a conflict rejected when signing
+    private boolean winner;
+
+    public boolean isForfeit() {
+        return forfeit;
+    }
+
+    public void setForfeit(boolean forfeit) {
+        this.forfeit = forfeit;
+    }
+
+    public boolean isWinner() {
+        return winner;
+    }
+
+    public void setWinner(boolean winner) {
+        this.winner = winner;
+    }
+
     public int getSet() {
         return set;
     }
